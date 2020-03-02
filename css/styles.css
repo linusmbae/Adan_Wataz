@@ -1,3 +1,39 @@
+.jumbotron h1
+{
+  font-family: Aclonica;
+  text-align: center;
+  color: #80c5de;
+}
+.jumbotron h2
+{
+  font-family: Aclonica;
+  text-align: center;
+  color: #C3AC2C;
+}
+.col-sm-3
+{
+  border: solid black;
+  background-color: gray;
+}
+.col-sm-3 img
+{
+  height: 30px;
+  width: auto;
+}
+.col-sm-3 a
+{
+  color: white;
+}
+.col-sm-8
+{
+  border: solid black;
+  background-color: gray;
+  margin-left: 60px;
+}
+.card-footer h3
+{
+  text-align: center;
+}
 body
 {
     
