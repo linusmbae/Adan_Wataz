@@ -41,9 +41,14 @@ form button
 }
 
 #care{
-    padding-left: 30%;
+    margin-left: 50%;
+    margin-top: -20%;
 }
 
 #how{
     color:blue
+}
+.col-md-4 h2
+{
+    text-align: left;
 }
