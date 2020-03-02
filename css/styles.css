@@ -1,0 +1,41 @@
+body
+{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#r
+{
+    background-image: url("../images/water-png-22.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.controls-top{
+    text-align: center;
+}
+
+#contactdetails{
+    padding-left: 20%;
+}
+form input
+{
+    margin-left: 150px;
+    width: 28.8%;
+    background-color: transparent;
+}
+form textarea
+{
+    margin-left: 150px;
+   width: 72.5%;
+   background-color: transparent;
+}
+form button
+{
+    margin-left: 450px;
+    width: 20%;
+}
+.jumbotron h3
+{
+    text-align: center;
+}
