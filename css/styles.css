@@ -1,4 +1,8 @@
 body{background-image: url("../images/home/adanwaters.gif");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: turquoise;
+}
+ol {
+  line-height: 50px;
 }
