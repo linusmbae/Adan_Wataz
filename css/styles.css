@@ -80,4 +80,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#addSupplier
+{
+  margin-left: 200px;
+  width: 40%;
+}
+#addForm input
+{
+  margin-left: 70px;
+}
 /*admin ends*/

@@ -12,6 +12,7 @@ $(document).ready(function()
                                 "<tr>"+
                                 "<th>Name</th>"+
                                 "<th>Email</th>"+
+                                "<th>Phone</th>"+
                                 "<th>Location</th>"+
                                 "</tr>"+
                                 "</table>"+
@@ -22,6 +23,7 @@ $(document).ready(function()
                                 "<tr>"+
                                 "<th>Name</th>"+
                                 "<th>Email</th>"+
+                                "<th>Phone</th>"+
                                 "<th>Location</th>"+
                                 "</tr>"+
                                 "</table>"+
@@ -31,6 +33,32 @@ $(document).ready(function()
 });
   /*Admin Home ends*/
   /*Admin add Supplier Starts*/
+$("#divSupplier").click(function()
+{
+  $("#displaySideBar").empty();
+  $("#displaySideBar").append("<div class=card-header>"+
+                              "<h2>Suppliers Registration Form</h2>"+
+                              "</div>"+
+                              "<div class='jumbotron'>"+
+                              "<form id='addForm'>"+
+                              "<input id='name' class='form-control-sm' type='text' placeholder='Supplier Name' required>"+
+                              "<input class='form-control-sm' type='text' placeholder='Supplier Email' required><br><br>"+
+                              "<input class='form-control-sm' type='text' placeholder='Phone Number' required>"+
+                              "<input class='form-control-sm' type='text' placeholder='SupplierLocation' required><br><br>"+
+                              "</form>"+
+                              "<button class='btn-primary' id='addSupplier'>Submit</button>"+
+                              "</div>"
+                              );
+    $("#addSupplier").click(function()
+    {
+      var sName=$("#name").val();
+      var sMail=$("#name").val();
+      var sPhone=$("#name").val();
+      var sLocation=$("#name").val();
+
+      alert("Supplier "+sName+" added succesfully");
+    });
+});
 
   /*Admin Supplier Ends*/
 });
