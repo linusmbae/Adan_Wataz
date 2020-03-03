@@ -1,4 +1,25 @@
-#about-us h1{
+#about-us h1,h2{
    text-align: center;
-   
+   font-family: 'PT Serif', serif;
+}
+.vision{
+    text-align: center;
+}
+.values{
+    text-align: center;
+}
+li {
+    list-style: none;
+    font-size: 20px;
+}
+.who-we-are{
+    padding-top:50px ;
+}
+.about h2{
+    font-family: 'Berkshire Swash', cursive;
+    padding-top:40 ;
+    padding-bottom: 40px;
+}
+p{
+    font-size: 20px;
 }
