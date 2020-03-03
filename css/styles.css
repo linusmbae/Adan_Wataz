@@ -20,10 +20,7 @@
   height: 30px;
   width: auto;
 }
-.col-sm-3 a
-{
-  color: white;
-}
+
 .col-sm-8
 {
   background-color: gray;
@@ -35,31 +32,45 @@
 }
 #sidebar
 {
-  background-image: url("../images/splash.jpg");
+  background-image: url("../images/back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #divHome:hover
 {
-  background-color: white;
+  background-color: blue;
 }
+
 #divHome:hover a
 {
-  color: black;
+  color: white;
 }
 #divSupplier:hover
 {
-  background-color: white;
+  background-color: blue;
 }
 #divSupplier:hover a
 {
-  color: black;
+  color: white;
 }
 #divManage:hover
 {
-  background-color: white;
+  background-color: blue;
 }
 #divManage:hover a
 {
-  color: black;
+  color: white;
+}
+.col-sm-6
+{
+  text-align: center;
+  border: solid black;
+  color: white;
+}
+
+#myWater
+{
+  background-image: url("../images/splash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
