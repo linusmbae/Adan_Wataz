@@ -1,5 +1,6 @@
 $(document).ready(function()
 {
+  /*Admin Home Starts*/
   $("#divHome").click(function()
 {
   $("#displaySideBar").empty();
@@ -28,4 +29,8 @@ $(document).ready(function()
                         "</div>"
                       );
 });
+  /*Admin Home ends*/
+  /*Admin add Supplier Starts*/
+
+  /*Admin Supplier Ends*/
 });

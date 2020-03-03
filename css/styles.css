@@ -1,3 +1,4 @@
+/*Admin Starts*/
 .jumbotron h1
 {
   font-family: Aclonica;
@@ -20,10 +21,14 @@
   height: 30px;
   width: auto;
 }
-
+#displaySideBar
+{
+  background-image: url("../images/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .col-sm-8
 {
-  background-color: gray;
   margin-left: 60px;
 }
 .card-footer h3
@@ -35,6 +40,7 @@
   background-image: url("../images/back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 15px;
 }
 #divHome:hover
 {
@@ -64,7 +70,7 @@
 .col-sm-6
 {
   text-align: center;
-  border: solid black;
+  border-left: solid black;
   color: white;
 }
 
@@ -74,3 +80,4 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+/*admin ends*/
