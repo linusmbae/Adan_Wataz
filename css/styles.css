@@ -1,13 +1,16 @@
+*{
+    /* background-image: url('https://www.water-technology.net/wp-content/uploads/sites/28/2017/11/water-thumb.png'); */
+}
 #about-us h1,h2{
    text-align: center;
    font-family: 'PT Serif', serif;
 }
-.vision{
+#vision{
     text-align: center;
 }
-.values{
-    text-align: center;
-}
+/* #values{ */
+    /* text-align:center; */
+/* } */
 li {
     list-style: none;
     font-size: 20px;
@@ -16,10 +19,23 @@ li {
     padding-top:50px ;
 }
 .about h2{
-    font-family: 'Berkshire Swash', cursive;
+    
     padding-top:40 ;
     padding-bottom: 40px;
 }
-p{
+.about p{
     font-size: 20px;
+}
+h3{
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+
+}
+.big{
+    background-color: green;
+    padding:20px;
+    border-radius: 25%;
+}
+h1 h2 h3{
+    color: greenyellow;
 }
