@@ -6,3 +6,7 @@ body{background-image: url("../images/home/adanwaters.gif");
 ol {
   line-height: 50px;
 }
+#domesticHidden
+{
+  display: none;
+}
