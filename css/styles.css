@@ -1,3 +1,4 @@
+/*Admin Starts*/
 .jumbotron h1
 {
   font-family: Aclonica;
@@ -12,31 +13,88 @@
 }
 .col-sm-3
 {
-  border: solid black;
   background-color: gray;
+
 }
 .col-sm-3 img
 {
   height: 30px;
   width: auto;
 }
-.col-sm-3 a
+#displaySideBar
 {
-  color: white;
+  background-image: url("../images/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .col-sm-8
 {
-  border: solid black;
-  background-color: gray;
   margin-left: 60px;
 }
 .card-footer h3
 {
   text-align: center;
 }
+
+.row #sidebar
+{
+  background-image: url("../images/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 15px;
+}
+#divHome:hover
+{
+  background-color: blue;
+}
+
+#divHome:hover a
+{
+  color: white;
+}
+#divSupplier:hover
+{
+  background-color: blue;
+}
+#divSupplier:hover a
+{
+  color: white;
+}
+#divManage:hover
+{
+  background-color: blue;
+}
+#divManage:hover a
+{
+  color: white;
+}
+.col-sm-6
+{
+  text-align: center;
+  border-left: solid black;
+  color: white;
+}
+
+#myWater
+{
+  background-image: url("../images/splash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#addSupplier
+{
+  margin-left: 200px;
+  width: 40%;
+}
+#addForm input
+{
+  margin-left: 70px;
+}
+/*admin ends*/
 body
 {
-    
+
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -95,6 +153,8 @@ h3{
 body{background-image: url("../images/home/adanwaters.gif");
   background-size: cover;
   background-repeat: no-repeat;
+
+}
   background-color: turquoise;
 }
 ol {
