@@ -12,8 +12,8 @@
 }
 .col-sm-3
 {
-  border: solid black;
   background-color: gray;
+
 }
 .col-sm-3 img
 {
@@ -26,11 +26,40 @@
 }
 .col-sm-8
 {
-  border: solid black;
   background-color: gray;
   margin-left: 60px;
 }
 .card-footer h3
 {
   text-align: center;
+}
+#sidebar
+{
+  background-image: url("../images/splash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#divHome:hover
+{
+  background-color: white;
+}
+#divHome:hover a
+{
+  color: black;
+}
+#divSupplier:hover
+{
+  background-color: white;
+}
+#divSupplier:hover a
+{
+  color: black;
+}
+#divManage:hover
+{
+  background-color: white;
+}
+#divManage:hover a
+{
+  color: black;
 }
