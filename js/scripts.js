@@ -1,3 +1,20 @@
+$(document).ready(function(){
+    $('#view').click(function(){
+        // alert('click ok to toggle!')
+        $('#hideToggle').toggle();
+        
+
+
+    });
+    
+
+
+
+    $(".flip").click(function(){
+      $("#panel").toggle(500);
+    });
+ 
+    
 function myFuntion()
 {
   var name=document.getElementById("nameDetails").value();
@@ -5,7 +22,6 @@ function myFuntion()
   alert(name+"we have received your message. Thank you for reaching out to us.");
 };
 
-$(document).ready(function()
 {
   /*Admin Home Starts*/
   $("#divHome").click(function()
