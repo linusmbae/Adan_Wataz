@@ -1,13 +1,22 @@
 $(document).ready(function(){
     $('#view').click(function(){
+        // alert('click ok to toggle!')
+        $('#hideToggle').toggle();
         
-        $('.toggle').toggle(2000);
-        $('.toggle').hide();
+
+
     });
     
 });
+
+// $(document).ready(function(){
+//     $('#core').click(function(){
+//         $('ol').toggle(500);
+//    });
+// });
 $(document).ready(function(){
-    $('#').click(function(){
-        $('.show').toggle(500);
+    $(".flip").click(function(){
+      $("#panel").toggle(500);
     });
-})
+  });
+    

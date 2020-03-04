@@ -14,11 +14,43 @@
 <body>
     <div id="about-us">
         <div class="jumbotron">
-          <div class="container">
-       <div class="about">
+            <div class="container">
+                <div class="about">
+            <div id="about" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://cdn.pixabay.com/photo/2017/02/13/21/57/lake-2063957_960_720.jpg" width="100%">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://img.geocaching.com/cache/c0f8d9cf-3c5c-4451-909c-776ecb3ba157.jpg" width="100%">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="" alt="">
+                  </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              
+              </div>
+        
             <h1>About Us</h1> 
         
-            <img src="https://www.water-technology.net/wp-content/uploads/sites/28/2017/11/water-thumb.png" height="300" width="1100">
+            <!-- <img src="https://www.water-technology.net/wp-content/uploads/sites/28/2017/11/water-thumb.png" class="img-fluid" width="100%"> -->
             <div class="who-we-are">
             <h2>who we are.</h2>
             <p>Adan_Wataz is a water Services Provider company(WASPC) that is newly registered in 2019 under the Societies Act (CAP 108), Laws of Kenya as an association of Water Services Providers (WSPA's) in the country.</p>
@@ -28,50 +60,53 @@
             <section class="vission">
                 <div class="row">
                     <div class="col-md-6">
-                        
+                        <div id="showToggle">
                         <h2>Vision & Mission<br><button type="button" id ="view" class="big">click here to see our vision</button></h2>
-                            <div class="toggle">
+                       </div>
+                            <div id="hideToggle">
                             <h3>Vision</h3>
                             <p>To be the association that facilitates Strong, Viable and Sustainable Water Services Provision.</p>
-                            <img src="https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073__340.jpg" width="500">
+                            <img src="https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073__340.jpg" width="500" id ="view">
                             <h3>Mission</h3>
                             <p>"To facilitate an enabling environment for Water Services Providers through Capacity building, Advocacy, Networking, Partnerships and promotion of best practices for provision of efficient and sustainable water and sanitation services"</p>
-                            <img src="https://thestar.blogs.com/.a/6a00d8341bf8f353ef0192ac1a7046970d-pi" height="400" width="500">
+                            <img src="https://thestar.blogs.com/.a/6a00d8341bf8f353ef0192ac1a7046970d-pi" height="400" width="500" id ="view">
                             <h3>Motto</h3>
                             <p>Advocating For Water Quality Services.</p>
                         </div>
                         </div>
                     <div class="col-md-6">
                     <div id="values">
-                        <h2>Our core values</h2>
-                        <div class="show">
-                        <h3>core values.</h3>
-                        <ul>
+                        <div class="flip">
+                            <h2>Our core values</h2><br><button type="button" id="core" class="big">click here to view our values</button>
+                        </div>
+                        <div id="panel">
+                        <!-- <h3>core values.</h3> -->
+                        <ol>
                             <li>Collaboration.</li>
                             <li>Team work.</li>
                             <li>Integrity</li>
                             <li>Good Corporate Governance</li>
                             <li>Learning</li>
                             <li>Rights.</li>
-                        </ul>
+                        </ol>
                     </div>
-                    </div>
+                    
                 </div>
               </div>
             </section>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-</div>
-</div>
 
 
 
-    <div class="jumbotron"></div>
+    <!-- <div class="jumbotron"></div>
         <h1 class="display-4">Hello, world!</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div>
+      </div> -->
 </body>
 </html>
