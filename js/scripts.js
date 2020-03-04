@@ -1,16 +1,11 @@
 $(document).ready(function() {
   $("#clickable1").click(function(){
-      $("#domesticHidden").toggle();
+      $("#domesticHidden").toggle(800);
     });
   });
 
   $(document).ready(function() {
     $("#clickable2").click(function(){
-        $("#commercialHidden").toggle();
+        $("#commercialHidden").toggle(800);
       });
     });
-    // function clickable2()
-    // {
-    //   ("#commercialShowing").toggle();
-    //   ("#commercialHidden").toggle();
-    // }
