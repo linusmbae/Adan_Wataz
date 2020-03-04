@@ -1,4 +1,13 @@
-$(document).ready(function(){
+
+$(document).ready(function() {
+  $("#clickable1").click(function(){
+      $("#domesticHidden").toggle(800);
+    });
+  
+    $("#clickable2").click(function(){
+        $("#commercialHidden").toggle(800);
+      });
+  
     $('#view').click(function(){
         // alert('click ok to toggle!')
         $('#hideToggle').toggle();
@@ -84,4 +93,3 @@ $("#divSupplier").click(function()
 });
 
   /*Admin Supplier Ends*/
-});

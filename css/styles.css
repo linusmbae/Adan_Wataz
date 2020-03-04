@@ -215,7 +215,54 @@ body{background-image: url("../images/home/adanwaters.gif");
 
 }
   background-color: turquoise;
+  padding-top: 10%;
+  font-size: 25px;
+  background-attachment: fixed;
 }
 ol {
   line-height: 50px;
+}
+#domesticHidden
+{
+  display: none;
+  background-color: rgb(194, 213, 241);
+}
+#commercialHidden
+{
+  display: none;
+  background-color: rgb(194, 213, 241);
+}
+#domesticShowing img
+{
+  height: 15px;
+  width: 15px;
+  margin-left: 175px;
+  margin-top: -20%;
+  cursor: pointer;
+}
+#commercialShowing img
+{
+  height: 15px;
+  width: 15px;
+  margin-left: 210px;
+  margin-top: -20%;
+  cursor: pointer;
+}
+ h1, h2 
+{
+  text-align: center;
+}
+.row
+{
+  margin-left: 20%;
+}
+.jumbotron
+{
+  opacity: 0.9;
+}
+.container h2{
+  font-family: 'Lora', serif;
+  font-size: 35px;
+  color: rgb(79, 79, 214);
+  padding-bottom: 20px;
 }
