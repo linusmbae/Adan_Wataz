@@ -56,3 +56,7 @@ form button
 h3{
     color: blue;
 }
+body{background-image: url("../images/home/adanwaters.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
