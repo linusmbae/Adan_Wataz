@@ -157,6 +157,14 @@ h1 h2 h3{
 {
   color: white;
 }
+#divManageCustomer:hover a
+{
+  color: white;
+}
+#divManageCustomer:hover
+{
+  background-color: blue;
+}
 .col-sm-6
 {
   text-align: center;
@@ -179,6 +187,28 @@ h1 h2 h3{
 #addForm input
 {
   margin-left: 70px;
+}
+#border
+{
+  background-color: black;
+}
+#border h4
+{
+
+  margin-left: 300px;
+  color: white;
+}
+#border button
+{
+  margin-left: -160px;
+}
+#tableHome table, th, td
+{
+  color: white;
+}
+#tableManage
+{
+  background-color: blue;
 }
 /*admin ends*/
 body
@@ -245,6 +275,9 @@ h3{
 body{background-image: url("../images/home/adanwaters.gif");
   background-size: cover;
   background-repeat: no-repeat;
+<<<<<<< HEAD
+  background-attachment: fixed;
+=======
 
 }
 
@@ -252,6 +285,7 @@ ol
 {
 
   line-height: 50px;
+>>>>>>> 1478ce9aab9d5e569414104d2260b835fe786957
 }
 #domesticHidden
 {
