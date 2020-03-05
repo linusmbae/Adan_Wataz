@@ -5,39 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
-<body>
-    <body>
-        <div class="container" >
-          <h1>Home</h1>
+  <body>
+    <div class="container">
+    <div class="jumbotron">
+          <!-- <h1>Home</h1> -->
           <h2>Welcome to Adan Wataz Company</h2>
-          <div class="test-box">Adan Wataz is an indigenous Kenyan based Company. <br>
-          We specialize in clean soft water for both domestic and commercial use. All our water sources have tested and <br> 
+          <div class="test-box">
+            <p>Adan Wataz is an indigenous Kenyan based Company. <br>
+          We specialize in clean soft water for both domestic and commercial use. All our water sources have tested and
           approved water as per Nairobi City Water and Sewerage Company regulations Act 1985. Cap A07.<br>
+            </p>
         </div>
-        <h3>Domestic Water</h3>
     
-          <div class="container-fluid">
-             <h4>This is a list of available water packages</h4>
-             <ul>
-             <li>10 Liters Distilled water</li>
-             <li>15 Liters Distilled water</li>
-             <li>20 Liters Distilled water</li>
-             <li>20 Liters Laundry water</li>
-             </ul>
-          </div>
-          <h3>Commercial Water</h3>
     
-          <div class="container-fluid">
-             <h5>This is a list of available water packages</h5>
-             <ul>
-             <li>k</li>
-             <li></li>
-             <li></li>
-             <li></li>
-             </ul>
-          </div>
-          </div>
+       <div class="row">
+            <div class="col-md-4">
+                <div id="domesticShowing"> 
+                  <h4>Domestic Water</h4>
+                  <img src="images/home/down.png" alt="" id="clickable1">
+                 </div>
+                <div id="domesticHidden"> 
+                 <h4 id="clickable1">This is a list of available water packages</h4>
+                 <ol id="clickable1">
+                 <li>10 Liters Distilled water</li>
+                 <li>15 Liters Distilled water</li>
+                 <li>20 Liters Distilled water</li>
+                 <li>20 Liters Laundry water</li>
+                 </ol>
+                </div>            
+            </div>  
+            <div class="col-md-4" id="right">
+              <div id="commercialShowing"> 
+                <h4>Commercial Water</h4>
+                <img src="images/home/down.png" alt="" id="clickable2">
+               </div>
+               <div id="commercialHidden"> 
+                <h4 id="clickable2">This is a list of available water packages</h4>
+                <ol id="clickable2">
+                 <li>3 tones truck</li>
+                 <li>6 tones truck</li>
+                 <li>9 tones truck</li>
+                 <li>12 tones truck</li>
+                 </ol>
+                </div> 
+            </div>
+       </div> 
+      </div> 
+    </div>
 </body>
 </html>
