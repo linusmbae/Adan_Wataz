@@ -183,5 +183,14 @@ h3{
 body{background-image: url("../images/home/adanwaters.gif");
   background-size: cover;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   background-attachment: fixed;
+=======
+
+}
+  background-color: turquoise;
+}
+ol {
+  line-height: 50px;
+>>>>>>> 1478ce9aab9d5e569414104d2260b835fe786957
 }
