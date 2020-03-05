@@ -84,11 +84,20 @@ $("#divSupplier").click(function()
   /*Admin Supplier Ends*/
 });
 
-function myFuntion()
+function myFunction()
 {
-  var name=document.getElementById("nameDetails").value();
-  var email=document.getElementById("email").value();
+  var name=document.getElementById("nameDetails").value;
+  var email=document.getElementById("email").value;
+  if (name=="")
+  {
+    alert("empty field");
+  }else if(email=="")
+  {
+    alert("empty field");
+  }else
+  {
   alert(name+"we have received your message. Thank you for reaching out to us.");
+  }
 };
 
   /*Admin Supplier Ends*/

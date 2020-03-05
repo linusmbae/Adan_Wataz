@@ -225,9 +225,12 @@ form button
 
 #care{
     margin-left: 50%;
-    margin-top: -20%;
+    margin-top: 0%;
 }
-
+#location
+{
+  margin-left: -40%;
+}
 #how{
     color:blue
 }
@@ -244,12 +247,9 @@ body{background-image: url("../images/home/adanwaters.gif");
   background-repeat: no-repeat;
 
 }
-  background-color: turquoise;
-  padding-top: 10%;
-  font-size: 25px;
-  background-attachment: fixed;
-}
-ol {
+ 
+ol
+{
   line-height: 50px;
 }
 #domesticHidden
