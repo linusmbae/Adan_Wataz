@@ -1,28 +1,18 @@
+
+// about-us 
 $(document).ready(function(){
     $('#view').click(function(){
         // alert('click ok to toggle!')
         $('#hideToggle').toggle();
-        
-
 
     });
     
-
-
-
     $(".flip").click(function(){
       $("#panel").toggle(500);
     });
  
     
-function myFuntion()
-{
-  var name=document.getElementById("nameDetails").value();
-  var email=document.getElementById("email").value();
-  alert(name+"we have received your message. Thank you for reaching out to us.");
-};
 
-{
   /*Admin Home Starts*/
   $("#divHome").click(function()
 {
@@ -85,3 +75,10 @@ $("#divSupplier").click(function()
 
   /*Admin Supplier Ends*/
 });
+
+function myFuntion()
+{
+  var name=document.getElementById("nameDetails").value();
+  var email=document.getElementById("email").value();
+  alert(name+"we have received your message. Thank you for reaching out to us.");
+};
