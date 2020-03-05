@@ -68,6 +68,14 @@
 {
   color: white;
 }
+#divManageCustomer:hover a
+{
+  color: white;
+}
+#divManageCustomer:hover
+{
+  background-color: blue;
+}
 .col-sm-6
 {
   text-align: center;
@@ -90,6 +98,28 @@
 #addForm input
 {
   margin-left: 70px;
+}
+#border
+{
+  background-color: black;
+}
+#border h4
+{
+
+  margin-left: 300px;
+  color: white;
+}
+#border button
+{
+  margin-left: -160px;
+}
+#tableHome table, th, td
+{
+  color: white;
+}
+#tableManage
+{
+  background-color: blue;
 }
 /*admin ends*/
 body
@@ -153,4 +183,5 @@ h3{
 body{background-image: url("../images/home/adanwaters.gif");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
