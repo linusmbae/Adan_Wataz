@@ -6,7 +6,7 @@ function AddMySupplier()
   this.location=[];
 }
 var addMySupplier=new AddMySupplier("","","","");
-
+// var removed=[];
 
 $(document).ready(function()
 {
@@ -16,10 +16,16 @@ $(document).ready(function()
   $("#email").val("");
   $("#phone").val("");
   $("#location").val("");
-  }
+};
 
-
-
+// function remove()
+// {
+//   addMySupplier = jQuery.grep(addMySupplier, function(value) {
+//     return value != removed;
+//   });
+// };
+var vName;
+var sName;
   /*Admin add Supplier Starts*/
 $("#divSupplier").click(function()
 {
@@ -39,23 +45,48 @@ $("#divSupplier").click(function()
                               );
     $("#addSupplier").click(function()
     {
-      var sName=$("#name").val();
+      vName="Name";
+      sName=$("#name").val();
+      var vMail="Email";
       var sMail=$("#email").val();
+      var vPhone="Phone";
       var sPhone=$("#phone").val();
+      var vLocation="Location";
       var sLocation=$("#location").val();
-      addMySupplier.name.push(sName);
-      addMySupplier.email.push(sMail);
-      addMySupplier.phone.push(sPhone);
-      addMySupplier.location.push(sLocation);
+      if (vName && sName && vMail && sMail && vPhone && sPhone && vLocation && sLocation)
+      {
+      localStorage.setItem(vName,sName);
+      localStorage.setItem(vMail,sMail);
+      localStorage.setItem(vPhone,sPhone);
+      localStorage.setItem(vLocation,sLocation);
       alert("Supplier "+sName+" added succesfully");
       formClear();
+    }
+      // console.log(localStorage);
+      // addMySupplier.name.push(sName);
+      // addMySupplier.email.push(sMail);
+      // addMySupplier.phone.push(sPhone);
+      // addMySupplier.location.push(sLocation);
+
     });
 });
 
   /*Admin Supplier Ends*/
+  for (let i=1; i<localStorage.length; i++)
+  {
+    var vName=localStorage.key(i);
+    var sName=localStorage.getItem(vName);
+    var vMail=localStorage.key(i);
+    var sMail=localStorage.getItem(vMail);
+    var vPhone=localStorage.key(i);
+    var sPhone=localStorage.getItem(vPhone);
+    var vLocation=localStorage.key(i);
+    var sLocation=localStorage.getItem(vLocation);
+  }
   /*Admin manage customer Starts*/
 $("#divManageCustomer").click(function()
 {
+
   $("#displaySideBar").empty();
     $("#displaySideBar").append(
                                 "<br><div class='jumbotron'>"+
@@ -66,12 +97,12 @@ $("#divManageCustomer").click(function()
                                             "<th>Email</th>"+
                                             "<th>Phone</th>"+
                                             "<th>Location</th>"+
-                                        "</tr>"+
-                                            "<td contenteditable='true'>"+addMySupplier.name+"<br>"+"</td>"+
-                                            "<td contenteditable='true'>"+addMySupplier.email+"<br>"+"</td>"+
-                                            "<td contenteditable='true'>"+addMySupplier.phone+"<br>"+"</td>"+
-                                            "<td contenteditable='true'>"+addMySupplier.location+"<br>"+"</td>"+
-                                        "</tr>"+
+                                            "<tr>"+
+                                                "<td contenteditable='true'>"+addMySupplier.name+"</td>"+
+                                                "<td contenteditable='true'>"+addMySupplier.email+"</td>"+
+                                                "<td contenteditable='true'>"+addMySupplier.phone+"</td>"+
+                                                "<td contenteditable='true'>"+addMySupplier.location+"</td>"+
+                                            "</tr>"+
                                     "</table>"+
                                 "</div>"+
                                 "<div class='row' id='border'>"+
@@ -101,10 +132,11 @@ $("#divManage").click(function()
                                             "<th>Phone</th>"+
                                             "<th>Location</th>"+
                                         "</tr>"+
-                                            "<td contenteditable='true'>"+addMySupplier.name+"</td>"+
-                                            "<td contenteditable='true'>"+addMySupplier.email+"</td>"+
-                                            "<td contenteditable='true'>"+addMySupplier.phone+"</td>"+
-                                            "<td contenteditable='true'>"+addMySupplier.location+"</td>"+
+                                        "<tr>"+
+                                            "<td contenteditable='true' id='removeMe'>"+sName+"</td>"+
+                                            "<td contenteditable='true' id='removeMe'>"+sMail+"</td>"+
+                                            "<td contenteditable='true' id='removeMe'>"+sPhone+"</td>"+
+                                            "<td contenteditable='true' id='removeMe'>"+sLocation+"</td>"+
                                         "</tr>"+
                                     "</table>"+
                                 "</div>"+
@@ -118,6 +150,11 @@ $("#divManage").click(function()
                                     "</div>"+
                                 "</div>"
                                 );
+$("#remove").click(function()
+{
+
+  $("#removeMe").remove();
+});
 
   });
   /*Admin manage supplier Ends*/
@@ -136,10 +173,11 @@ $("#divManage").click(function()
                                         "<th>Phone</th>"+
                                         "<th>Location</th>"+
                                     "</tr>"+
-                                        "<td>"+addMySupplier.name+"</td>"+
-                                        "<td>"+addMySupplier.email+"</td>"+
-                                        "<td>"+addMySupplier.phone+"</td>"+
-                                        "<td>"+addMySupplier.location+"</td>"+
+                                    "<tr>"+
+                                        "<td contenteditable='true' id='removeMe'>"+sName+"</td>"+
+                                        "<td contenteditable='true' id='removeMe'>"+sMail+"</td>"+
+                                        "<td contenteditable='true' id='removeMe'>"+sPhone+"</td>"+
+                                        "<td contenteditable='true' id='removeMe'>"+sLocation+"</td>"+
                                     "</tr>"+
                                 "</table>"+
                             "</div><br><br>"+
@@ -154,10 +192,17 @@ $("#divManage").click(function()
                                         "<th>Phone</th>"+
                                         "<th>Location</th>"+
                                     "</tr>"+
+                                    "<tr>"+
+                                        "<td contenteditable='true'>"+addMySupplier.name+"</td>"+
+                                        "<td contenteditable='true'>"+addMySupplier.email+"</td>"+
+                                        "<td contenteditable='true'>"+addMySupplier.phone+"</td>"+
+                                        "<td contenteditable='true'>"+addMySupplier.location+"</td>"+
+                                    "</tr>"+
                                 "</table>"+
                             "</div>"+
                         "</div>"
                       );
+
 });
   /*Admin Home ends*/
 });
