@@ -1,6 +1,13 @@
+$(document).ready(function() {
+  $("#clickable1").click(function(){
+      $("#domesticHidden").toggle(800);
+    });
+  
+    $("#clickable2").click(function(){
+        $("#commercialHidden").toggle(800);
+      });
+  
 
-// about-us 
-$(document).ready(function(){
     $('#view').click(function(){
         // alert('click ok to toggle!')
         $('#hideToggle').toggle();
@@ -73,6 +80,7 @@ $("#divSupplier").click(function()
     });
 });
 
+
   /*Admin Supplier Ends*/
 });
 
@@ -82,3 +90,6 @@ function myFuntion()
   var email=document.getElementById("email").value();
   alert(name+"we have received your message. Thank you for reaching out to us.");
 };
+
+  /*Admin Supplier Ends*/
+
