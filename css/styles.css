@@ -1,5 +1,82 @@
-{
+/* { */
     /* background-image: url('https://www.water-technology.net/wp-content/uploads/sites/28/2017/11/water-thumb.png'); */
+/* } */
+/* nav{
+    opacity: 0.8;
+    border-radius: 25px;
+}
+  nav, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(126, 117, 117);
+  }
+  
+  nav ul li {
+    float: right;
+    padding-top: 5px;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  } */
+  
+  /* Change the link color to #111 (black) on hover */
+  /* li a:hover {
+    background-color: rgb(85, 83, 83);
+    color:rgb(255, 204, 213);
+  }
+  .active {
+    background-color: rgb(33, 36, 33);
+  }  
+  label{
+      font-size: 30px;
+      padding: 14px 16px;
+  } */
+
+  nav{
+    background-color: antiquewhite;
+    height:80px;
+    width:100%;
+    /* position: fixed; */
+}
+nav ul{
+    float:right;
+    margin-right:20px;
+}
+nav ul li{
+display: inline-block;
+line-height: 80px;
+margin:0 5px;
+padding: 5px;
+}
+nav ul li a{
+    color:rgb(66, 65, 65);
+    font-size:20px;
+    /* text-transform: uppercase; */
+    /* border-radius:3px; */
+    font-weight: bold;
+    justify-content: space-around;
+    width: 30px;
+}
+nav ul li a:hover{
+    background-color: rgb(241, 76, 109);
+    transition: 5s;
+}
+lable.logo{
+    color:rgb(114, 55, 13);
+    font-size: 45px;
+    line-height:80px;
+    font-weight: bold;
+    padding-left:50px;
+    font-family: 'Berkshire Swash', cursive;
+
 }
 #about-us h1,h2{
    text-align: center;
@@ -17,11 +94,6 @@
 }
 .who-we-are{
     padding-top:50px ;
-}
-.about h2{
-    
-    /* padding-top:40 ; */
-    /* padding-bottom: 40px; */
 }
 .about p{
     font-size: 20px;
@@ -104,7 +176,7 @@ h1 h2 h3{
 }
 #divHome:hover
 {
-  background-color: blue;
+  background-color: rgb(181, 181, 221);
 }
 
 #divHome:hover a
