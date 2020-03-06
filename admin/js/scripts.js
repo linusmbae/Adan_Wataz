@@ -1,3 +1,4 @@
+
 function Person()
 {
   this.name=[];
@@ -8,7 +9,8 @@ function Person()
 var addMySupplier=new Person("","","","");
 var addMyCustomer=new Person("","","","");
 
-
+$(document).ready(function()
+{
   function formClear()
   {
   $("#name").val("");
@@ -16,6 +18,13 @@ var addMyCustomer=new Person("","","","");
   $("#phone").val("");
   $("#location").val("");
 };
+
+// function remove()
+// {
+//   addMySupplier = jQuery.grep(addMySupplier, function(value) {
+//     return value != removed;
+//   });
+// };
 
   /*Admin add Supplier Starts*/
 $("#divSupplier").click(function()
@@ -203,6 +212,6 @@ $("#remove").click(function()
 
   /*Admin Home ends*/
 
-
-
   /*Admin Supplier Ends*/
+
+});
