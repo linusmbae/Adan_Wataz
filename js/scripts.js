@@ -1,9 +1,4 @@
-<<<<<<< HEAD:admin/js/scripts.js
 function Person()
-=======
-
-function AddMySupplier()
->>>>>>> db4a71ddd38a4784ae114f846557be412ef55a01:js/scripts.js
 {
   this.name=[];
   this.email=[];
@@ -166,30 +161,6 @@ $("#remove").click(function()
 
   });
   /*Admin manage supplier Ends*/
-
-$(document).ready(function() {
-  $("#clickable1").click(function(){
-      $("#domesticHidden").toggle(800);
-    });
-  
-    $("#clickable2").click(function(){
-        $("#commercialHidden").toggle(800);
-      });
-  
-
-    $('#view').click(function(){
-        // alert('click ok to toggle!')
-        $('#hideToggle').toggle();
-
-    });
-    
-    $(".flip").click(function(){
-      $("#panel").toggle(500);
-    });
- 
-    
-
-
   /*Admin Home Starts*/
   $("#divHome").click(function()
 {
@@ -236,30 +207,5 @@ $(document).ready(function() {
                       );
 
 });
-
   /*Admin Home ends*/
-
-
-
-  /*Admin Supplier Ends*/
-
 });
-
-function myFunction()
-{
-  var name=document.getElementById("nameDetails").value;
-  var email=document.getElementById("email").value;
-  if (name=="")
-  {
-    alert("empty field");
-  }else if(email=="")
-  {
-    alert("empty field");
-  }else
-  {
-  alert(name+"we have received your message. Thank you for reaching out to us.");
-  }
-};
-
-  /*Admin Supplier Ends*/
-
