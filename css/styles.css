@@ -204,3 +204,42 @@ font-size: 35px;
 color: rgb(79, 79, 214);
 padding-bottom: 20px;
 }
+#appendedDomestic
+{
+    background-color: #ADFF2F;
+    margin-left: 20%;
+}
+#appendedDomestic img
+{
+    height: 70%;
+    width: 110%;
+
+}
+#appendedDomestic .col-md-2
+{
+    margin-left: 20px;
+}
+#displayLitter
+{
+    margin-left: 90%;
+    margin-top: -5.5%;
+    font-size: 180%;
+    font-weight: bold;
+}
+#displayLitterm
+{
+    margin-left: 68.6%;
+    margin-top: -10%;
+    font-size: 180%;
+    font-weight: bold;
+}
+#myButton
+{
+    margin-left: 30%;
+    width: 20%;
+}
+#totalLiters
+{
+    margin-top: 20%;
+    text-align: center;
+}
