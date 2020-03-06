@@ -1,12 +1,12 @@
-function AddMySupplier()
+function Person()
 {
   this.name=[];
   this.email=[];
   this.phone=[];
   this.location=[];
 }
-var addMySupplier=new AddMySupplier("","","","");
-// var removed=[];
+var addMySupplier=new Person("","","","");
+var addMyCustomer=new Person("","","","");
 
 $(document).ready(function()
 {
@@ -24,8 +24,7 @@ $(document).ready(function()
 //     return value != removed;
 //   });
 // };
-var vName;
-var sName;
+
   /*Admin add Supplier Starts*/
 $("#divSupplier").click(function()
 {
@@ -45,8 +44,8 @@ $("#divSupplier").click(function()
                               );
     $("#addSupplier").click(function()
     {
-      vName="Name";
-      sName=$("#name").val();
+      var vName="Name";
+      var sName=$("#name").val();
       var vMail="Email";
       var sMail=$("#email").val();
       var vPhone="Phone";
@@ -72,6 +71,7 @@ $("#divSupplier").click(function()
 });
 
   /*Admin Supplier Ends*/
+  /*Admin localStorage starts*/
   for (let i=1; i<localStorage.length; i++)
   {
     var vName=localStorage.key(i);
@@ -83,6 +83,7 @@ $("#divSupplier").click(function()
     var vLocation=localStorage.key(i);
     var sLocation=localStorage.getItem(vLocation);
   }
+  /*Admin localStorage Ends*/
   /*Admin manage customer Starts*/
 $("#divManageCustomer").click(function()
 {
@@ -133,10 +134,10 @@ $("#divManage").click(function()
                                             "<th>Location</th>"+
                                         "</tr>"+
                                         "<tr>"+
-                                            "<td contenteditable='true' id='removeMe'>"+sName+"</td>"+
-                                            "<td contenteditable='true' id='removeMe'>"+sMail+"</td>"+
-                                            "<td contenteditable='true' id='removeMe'>"+sPhone+"</td>"+
-                                            "<td contenteditable='true' id='removeMe'>"+sLocation+"</td>"+
+                                            "<td contenteditable='true' id='removeMe'>"+localStorage.Name+"</td>"+
+                                            "<td contenteditable='true' id='removeMe'>"+localStorage.Email+"</td>"+
+                                            "<td contenteditable='true' id='removeMe'>"+localStorage.Phone+"</td>"+
+                                            "<td contenteditable='true' id='removeMe'>"+localStorage.Location+"</td>"+
                                         "</tr>"+
                                     "</table>"+
                                 "</div>"+
@@ -152,8 +153,10 @@ $("#divManage").click(function()
                                 );
 $("#remove").click(function()
 {
-
-  $("#removeMe").remove();
+  localStorage.removeItem("Name");
+  localStorage.removeItem("Email");
+  localStorage.removeItem("Phone");
+  localStorage.removeItem("Location");
 });
 
   });
@@ -174,10 +177,10 @@ $("#remove").click(function()
                                         "<th>Location</th>"+
                                     "</tr>"+
                                     "<tr>"+
-                                        "<td contenteditable='true' id='removeMe'>"+sName+"</td>"+
-                                        "<td contenteditable='true' id='removeMe'>"+sMail+"</td>"+
-                                        "<td contenteditable='true' id='removeMe'>"+sPhone+"</td>"+
-                                        "<td contenteditable='true' id='removeMe'>"+sLocation+"</td>"+
+                                        "<td contenteditable='true' id='removeMe'>"+localStorage.Name+"</td>"+
+                                        "<td contenteditable='true' id='removeMe'>"+localStorage.Email+"</td>"+
+                                        "<td contenteditable='true' id='removeMe'>"+localStorage.Phone+"</td>"+
+                                        "<td contenteditable='true' id='removeMe'>"+localStorage.Location+"</td>"+
                                     "</tr>"+
                                 "</table>"+
                             "</div><br><br>"+
